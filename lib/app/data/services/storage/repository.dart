@@ -1,12 +1,11 @@
-import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
-import 'package:todo/app/core/utils/keys.dart';
+import 'package:todo/app/data/models/task.dart';
+import 'package:todo/app/data/providers/task/provider.dart';
 
-class StorageService extends GetxService {
-  late GetStorage _box;
-  Future<StorageService> init() async {
-    _box = GetStorage();
-    await _box.writeIfNull(taskKey, []);
-    return this;
-  }
+//we use the repository to access the provider for the readtasks and writetasks
+class TaskRepository {
+  TaskProvider taskProvider;
+  TaskRepository({required this.taskProvider});
+
+  List<Task> readTasks() => taskProvider.readTasks();
+  void writeTasks(List<Task> tasks) => taskProvider.writeTasks(tasks);
 }

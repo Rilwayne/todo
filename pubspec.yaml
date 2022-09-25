@@ -38,6 +38,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   get:
   get_storage:
+  equatable:
+  flutter_easyloading:
+  dotted_border:
+  step_progress_indicator:
 
 dev_dependencies:
   flutter_test:

@@ -1,5 +1,7 @@
+//this handles icons we will use
+
 const personIcon = 0xe491;
-const workIocn = 0xe11c;
+const workIcon = 0xe11c;
 const movieIcon = 0xe40f;
 const sportIcon = 0xe4dc;
 const travelIcon = 0xe071;

@@ -125,7 +125,8 @@ class DetailPage extends StatelessWidget {
                 },
               ),
             ),
-            DoingList()
+            DoingList(),
+            DoneList()
           ],
         ),
       )

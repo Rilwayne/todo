@@ -42,6 +42,7 @@ dependencies:
   flutter_easyloading:
   dotted_border:
   step_progress_indicator:
+  intl:
 
 dev_dependencies:
   flutter_test:
